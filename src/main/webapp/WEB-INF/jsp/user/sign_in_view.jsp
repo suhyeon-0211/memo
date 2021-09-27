@@ -15,29 +15,41 @@
 </head>
 <body>
 	<div class="wrap">
-		<header class="d-flex align-items-center">
-			<h1 class="font-weight-bold pl-4">메모 게시판</h1>
+		<header>
+			<div class="d-flex justify-content-between">
+				<div class="logo d-flex align-items-center">
+					<h1 class="font-weight-bold pl-4">메모 게시판</h1>
+				</div>
+				<div class="login-info d-flex align-items-center mr-4">
+					<span class="font-weight-bold">마론달님 안녕하세요.</span>
+					<a href="#" class="font-weight-bold ml-3">로그아웃</a>
+				</div>
+			</div>
 		</header>
-		<section class="d-flex justify-content-center align-items-center">
-			<div>
-				<div class="input-group">
-					<div class="input-group-text">
-						<img src="/static/images/user.png" alt="user" width="30">
+		<section class="contents">
+			<div class="d-flex justify-content-center align-items-center">
+				<div id="sectionWrap">
+					<div class="input-group">
+						<div class="input-group-text">
+							<img src="/static/images/user.png" alt="user" width="30">
+						</div>
+						<input type="text" class="form-control">
 					</div>
-					<input type="text" class="form-control">
-				</div>
-				<div class="input-group pt-2">
-					<div class="input-group-text">
-						<img src="/static/images/key.png" alt="key" width="30">
+					<div class="input-group pt-2">
+						<div class="input-group-text">
+							<img src="/static/images/key.png" alt="key" width="30">
+						</div>
+						<input type="text" class="form-control">
 					</div>
-					<input type="text" class="form-control">
+					<button type="button" class="btn btn-primary d-block w-100 mt-3">로그인</button>
+					<button type="button" class="btn btn-success d-block w-100 mt-2">회원가입</button>
 				</div>
-				<button type="button" class="btn btn-primary d-block w-100 mt-3">로그인</button>
-				<button type="button" class="btn btn-success d-block w-100 mt-2">회원가입</button>
 			</div>
 		</section>
-		<footer class="d-flex justify-content-center align-items-center">
-				<h3>copyright maronbiana</h3>
+		<footer>
+			<div class="h-100 d-flex justify-content-center align-items-center">
+				<small>copyright maronbiana</small>
+			</div>
 		</footer>
 	</div>
 </body>

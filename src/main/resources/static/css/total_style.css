@@ -1,7 +1,9 @@
 @charset "UTF-8";
-.wrap {margin: 0}
 header {background-color: #E6E6E6; height: 100px;}
+header .logo {height:100px;}
+header .login-info {height:100px;}
 
-section {height: 500px;}
+.contents {height: auto;}
+.contents #sectionWrap {padding-top: 100px; padding-bottom: 100px;}
 
 footer {height: 100px; background-color: #E6E6E6;}
