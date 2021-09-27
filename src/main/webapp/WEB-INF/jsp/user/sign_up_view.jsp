@@ -11,7 +11,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="/css/sign_style.css" style="text/css">
+	<link rel="stylesheet" href="/static/css/total_style.css" style="text/css">
 </head>
 <body>
 	<div class="wrap">
@@ -19,13 +19,17 @@
 			<h1 class="font-weight-bold pl-4">메모 게시판</h1>
 		</header>
 		<section class="d-flex justify-content-center align-items-center">
-			<div class="col-4">
+			<div class="container">
 				<h2 class="text-center">회원가입</h2>
 				<div class="d-flex justify-content-between align-items-center pt-3">
 					<label for="userId">아이디</label>
-					<input type="text" class="form-control col-6 ml-3" id="userId">
-					<button type="button" class="btn btn-warning mr-0">중복확인</button>
+					<input type="text" class="form-control col-8 ml-3" id="userId">
+					<%-- <button type="button" class="btn btn-warning mr-0">중복확인</button>
+					<div id="idStatusArea"></div> --%>
+				</div>
+				<div class="d-flex justify-content-between align-items-center pt-1">
 					<div id="idStatusArea"></div>
+					<button type="button" class="btn btn-warning mr-0"><small>중복확인</small></button>
 				</div>
 				<div class="d-flex justify-content-between align-items-center pt-3">
 					<label for="password">비밀번호</label>
